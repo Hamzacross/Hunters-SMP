@@ -1,0 +1,27 @@
+name: HuntersSMP
+main: me.hunterssmp.Main
+version: 1.0.0
+api-version: 1.20
+author: Hamzacross100
+description: A thrilling hunter vs hunted minigame plugin for Minecraft SMP.
+
+depend:
+  - PlaceholderAPI
+
+commands:
+  hunts:
+    description: Main command for HuntersSMP plugin
+    usage: /<command> [start|stop|shop|add|remove|help]
+    permission: hunterssmp.use
+    permission-message: You don't have permission to use this command.
+
+permissions:
+  hunterssmp.use:
+    description: Allows players to use the /hunts command (open shop).
+    default: true
+  hunterssmp.admin:
+    description: Allows admins to use admin subcommands like start, stop, add, remove.
+    default: op
+
+softdepend:
+  - PlaceholderAPI

@@ -1,0 +1,79 @@
+# -----------------------------
+# HuntersSMP Configuration File
+# Made By Hamzacross100, Have Fun
+# -----------------------------
+
+# Language support: en
+language: "en"
+
+# -----------------------------
+# Hunt Settings
+# -----------------------------
+huntDurationSeconds: 600      # Hunt duration in seconds (default 10 minutes)
+keysPerKill: 1                # How many hunt keys hunter receives per successful kill
+
+# Auto Hunt settings
+autoHunt:
+  enabled: true               # Enable automatic hunts
+  intervalSeconds: 1800       # Interval between auto hunts (30 min default)
+  announce: true              # Broadcast auto hunt start
+
+# -----------------------------
+# Placeholders Testing
+# -----------------------------
+showPlaceholdersToOwner: true # Owner can toggle to see placeholders in chat
+
+# -----------------------------
+# Messages (Default language)
+# -----------------------------
+messages:
+  notPlayer: "&cOnly players can use this command."
+  noPermission: "&cYou don't have permission to use this!"
+
+  # Hunt messages
+  huntActive: "&cA hunt is already active!"
+  huntNotActive: "&cNo active hunt!"
+  huntStartFail: "&cFailed to start the hunt!"
+  huntStopped: "&aHunt has been stopped!"
+  hunterCompass: "&aYou received a compass to track your hunted player!"
+  huntedTracked: "&cYou are being hunted by %hunter%!"
+  huntBroadcast: "&6%hunter% &estarted hunting &6%hunted%!"
+  huntStarted: "&6%hunter% &estarted hunting &6%hunted%!"
+  huntSuccess: "&6%hunter% &ahas successfully hunted &6%hunted%!"
+  huntTimeout: "&6%hunted% &aescaped the hunt!"
+
+  invalidUsage: "&cInvalid usage! &fUsage: %usage%"
+  playerNotFound: "&cPlayer not found or offline!"
+  invalidAmount: "&cInvalid amount! Must be between 1 and 10."
+
+  # Hunt key messages
+  keysAdded: "&aAdded %amount% hunt key(s) to %player%."
+  keysRemoved: "&aRemoved %amount% hunt key(s) from %player%."
+  keysReceived: "&aYou received %amount% hunt key(s)!"
+  keysLost: "&cYou lost %amount% hunt key(s)!"
+
+  reloadSuccess: "&aConfiguration, messages, and data reloaded!"
+
+  # Admin help messages
+  adminHelpHeader: "&6=== HuntersSMP Admin Help ==="
+  adminHelpStart: "&a/hunts start <hunter> <hunted> &f- Start a hunt between two players."
+  adminHelpStop: "&a/hunts stop &f- Stop the current active hunt."
+  adminHelpKeyAdd: "&a/hunts key add <player> <amount> &f- Add up to 10 hunt keys."
+  adminHelpKeyRemove: "&a/hunts key remove <player> <amount> &f- Remove up to 10 hunt keys."
+  adminHelpShop: "&a/hunts shop &f- Open the Hunter's Shop."
+  adminHelpHelp: "&a/hunts help &f- Show this help menu."
+  adminHelpReload: "&a/hunts reload &f- Reload configuration, messages, and data."
+  adminHelpFooter: "&6=============================="
+
+  # Boss bar timer
+  huntTimerTitle: "&cHunt: %hunter% vs %hunted% - Time left: %time%"
+
+# -----------------------------
+# Placeholders Reference
+# -----------------------------
+# %hunter%   - The name of the hunter in the hunt
+# %hunted%   - The name of the hunted player
+# %player%   - The target player (used for keys added/removed)
+# %amount%   - Number of hunt keys added or removed
+# %time%     - Remaining time in hunt (used in boss bar)
+# %usage%    - Shows correct usage for invalid command messages
